@@ -1,0 +1,21 @@
+{
+  "name": "svg2bsv",
+  "version": "0.1.0",
+  "description": "Converts SVG to Blacksmith 2D Vector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "~",
+  "license": "MIT",
+  "bin": {
+    "snippet": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.16.0",
+    "jsdom": "^11.11.0",
+    "parse-color": "^1.0.0",
+    "parse-unit": "^1.0.1",
+    "svg-transform-parser": "0.0.1"
+  }
+}
