@@ -29,4 +29,4 @@ let svgLen = svg.length;
 let bsvLen = JSON.stringify(d).length;
 
 console.log('SVG Size:', svgLen, '~ BSV Size:', bsvLen, '~ diff:', (svgLen / bsvLen).toFixed(2) + 'x smaller');
-fs.writeFileSync(program.out, JSON.stringify(d));
+fs.writeFileSync(program.out, JSON.stringify(d/*, null, 2*/));
