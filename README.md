@@ -17,11 +17,11 @@ Converts SVG files to BSV.
 ### Shapes
 - [x] Rect
 - [x] Circle
-- [ ] Elipse
-- [ ] Line
-- [ ] Polyline
-- [ ] Path
-- [ ] Polygon
+- [x] Elipse
+- [x] Line
+- [x] Polyline
+- [x] Path
+- [x] Polygon
 
 ### Styles
 - [x] Fill color
