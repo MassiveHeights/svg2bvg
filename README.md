@@ -33,25 +33,24 @@ Converts SVG files to BSV.
 - [ ] Stroke gradient
 - [x] Stroke opacity
 - [x] Stroke width
-- [ ] Line Dash 
-- [ ] Fill Rule
+- [x] Line Dash
+- [x] Fill Rule
 - [x] Cap Style
 - [x] Joint Style
 - [x] Miter Limit
 - [x] Opacity
 - [ ] Display
 
-### Other 
-- [ ] Markers
-
 ### Units
 - [x] px, pt, pc, mm, cm, in
 
 ### Next Release
 - CSS styles and Inlined styles
+- Embedded images
 
 ## Not supported SVG features
 - CSS styles and Inlined styles (only attributes is supported)
+- Markers
 - Text - must be converted to outlines
 - Animations
 - Visibility
