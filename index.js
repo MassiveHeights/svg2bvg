@@ -6,9 +6,9 @@ const program = require('commander');
 
 program
   .version('0.1.0')
-  .usage('--in <file.svg> --out [file.bvg]')
+  .usage('--in <file.svg> --out [file.json]')
   .option('--in [in.svg]', 'Input file')
-  .option('--out [out.bsv]', 'Output file')
+  .option('--out [out.json]', 'Output file')
   .parse(process.argv);
 
 if (!process.argv.slice(2).length) {
