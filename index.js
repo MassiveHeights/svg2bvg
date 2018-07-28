@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-const svg2bsg = require('./lib/svg2bvg');
+const svg2bvg = require('./lib/svg2bvg');
 const fs = require('fs');
 const program = require('commander');
-
 
 program
   .version('0.1.0')
@@ -22,11 +21,9 @@ if (argc.rawArgs.length !== 6) {
   program.outputHelp();
 }
 
-let svg = fs.readFileSync(program.in);
+let svgText = fs.readFileSync(program.in);
+let data = svg2bvg.convert(svgText);
 
-let d = svg2bsg.convert(svg);
-let svgLen = svg.length;
-let bsvLen = JSON.stringify(d).length;
+fs.writeFileSync(program.out, JSON.stringify(data));
 
-console.log('SVG Size:', svgLen, 'bytes, BVG Size:', bsvLen, 'bytes. Diff:', (svgLen / bsvLen).toFixed(2) + 'x smaller');
-fs.writeFileSync(program.out, JSON.stringify(d/*, null, 2*/));
+console.log(`File '${program.in}' successfully converted.`);
