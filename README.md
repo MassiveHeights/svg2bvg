@@ -1,11 +1,11 @@
-# svg2bsv
-Converts SVG files to BSV.
+# svg2bvg
+Converts SVG files to BVG.
 
 ## Installation
-`npm install svg2bsv -g`  
+`npm install svg2bvg -g`  
 
 ## Usage
-`svg2bsv --in face.svg --out book.bsv`
+`svg2bvg --in face.svg --out book.json`
 
 ## Supported SVG featuers
 
