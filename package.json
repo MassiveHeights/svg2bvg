@@ -1,15 +1,15 @@
 {
-  "name": "svg2bsv",
+  "name": "svg2bvg",
   "version": "0.1.0",
-  "description": "Converts SVG to Blacksmith 2D Vector",
+  "description": "Converts SVG to Black Engine Vector Graphics",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "~",
+  "author": "Massive Heights",
   "license": "MIT",
   "bin": {
-    "snippet": "./index.js"
+    "svg2bvg": "./index.js"
   },
   "dependencies": {
     "commander": "^2.16.0",
