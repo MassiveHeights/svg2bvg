@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const svg2bvg = require('./lib/svg2bvg');
+const svg2bvg = require('./lib/svg2bvg').SVG2BVG;
 const fs = require('fs');
 const program = require('commander');
 
