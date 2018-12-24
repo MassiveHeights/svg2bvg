@@ -3,8 +3,10 @@ const svg2bvg = require('./lib/svg2bvg').SVG2BVG;
 const fs = require('fs');
 const program = require('commander');
 
+var pjson = require('./package.json');
+
 program
-  .version('0.1.0')
+  .version(pjson.version.toString())
   .usage('--in <file.svg> --out [file.json]')
   .option('--in [in.svg]', 'Input file')
   .option('--out [out.json]', 'Output file')
